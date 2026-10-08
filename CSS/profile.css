@@ -1,0 +1,114 @@
+/* Header */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Profile Container - Flex Layout */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Profile and Saved Addresses Box */
+.profile-box, .saved-addresses {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Makes both sections equal width */
+    min-width: 300px; /* Prevents shrinking too much */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+/* Input Fields (Profile & Saved Addresses) */
+.profile-box input, .saved-addresses input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Improve input focus styling */
+.profile-box input:focus, .saved-addresses input:focus {
+    border-color: blueviolet;
+    outline: none;
+}
+
+/* Button Styling */
+.profile-box button, .saved-addresses button {
+    font-size: 18px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.profile-box button:hover, .saved-addresses button:hover {
+    background-color: blueviolet;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stacks the sections on smaller screens */
+    }
+    
+    .profile-box, .saved-addresses {
+        width: 100%;
+    }
+}
+/* Standard Button Styling */
+.btn-custom {
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: auto;
+}
+
+.btn-custom:hover {
+    background-color: blueviolet;
+}

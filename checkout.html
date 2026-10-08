@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout - Aurora's Scents</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/checkout.css">
+
+    <!--Embedded CSS for specific styling-->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER + NAVBAR -->
+    <header class="bg-white">
+        <div class="container text-center py-3">
+            <h1 class="fw-bold"><a class="nav-link" href="index.html">Aurora's Scents</a></h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="women.html">Women's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Men's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="checkout-container text-center my-5">
+        <div class="container">
+            <h2 class="fw-bold">Checkout</h2>
+            <p class="lead">Complete your purchase by filling in your details.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="checkout-form">
+                        <h3 class="fw-bold">Billing Details</h3>
+                        <form id="checkout-form" name="checkoutForm" method="post" action="/insert-checkout"
+                            onsubmit="return validateCheckout()">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name Here">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Here">
+
+                            <label for="address">Shipping Address</label>
+                            <input type="text" id="address" name="address" placeholder="Your Address Here">
+
+                            <label for="phone">Contact Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Your Contact Number">
+
+                            <h3 class="fw-bold mt-4">Payment Method</h3>
+                            <div class="payment-options">
+                                <input type="radio" id="cash" name="payment" value="cash" checked>
+                                <label for="cash">Cash on Delivery</label>
+
+                                <input type="radio" id="card" name="payment" value="card">
+                                <label for="card">Credit/Debit Card</label>
+                            </div>
+                            <!--inline css style -->
+                            <div id="card-details" style="display: none;">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1121">
+
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+
+                            <button type="submit">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Aurora's Scents. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="Java/checkout.js"></script>
+
+</body>
+
+</html>

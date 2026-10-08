@@ -1,0 +1,78 @@
+/* Header */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered Checkout Box */
+.checkout-container {
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-container label {
+    font-weight: 500;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.checkout-container input,
+.checkout-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.checkout-container button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.checkout-container button:hover {
+    background: blueviolet;
+}

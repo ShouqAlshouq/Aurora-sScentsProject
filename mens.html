@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Men's Fragrance - Aurora's Scents</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/mens.css">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="Java/mens.js"></script>
+
+    <!--Embedded CSS for specific styling-->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav SECTION -->
+    <header class="bg-white">
+        <div class="container text-center py-3">
+            <h1 class="fw-bold"><a class="nav-link" href="index.html">Aurora's Scents</a></h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="women.html">Women's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Men's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--inline css style-->
+    <h1 style="text-align: center;">Men's Fragrances</h1>
+    <div class="container">
+        <div class="product">
+            <img src="IMAGES/men1.webp" alt="Men's Perfume 1">
+            <h2>Bold Essence</h2>
+            <p>A sophisticated blend of leather, cedarwood, and spicy black pepper.</p>
+            <div class="price">AED 90.00</div>
+            <!--inline css style-->
+            <button class="btn"><a href="PERFUME PAGES/boldEssence.html" style="color: white;">View Perfume
+                    Details</a></button>
+        </div>
+        <div class="product">
+            <img src="IMAGES/men2.jpg" alt="Men's Perfume 2">
+            <h2>Midnight Storm</h2>
+            <p>A powerful fusion of bergamot, patchouli, and smoky oud for a lasting impression.</p>
+            <div class="price">AED 100.00</div>
+            <!--inline css style-->
+            <button class="btn"><a href="PERFUME PAGES/midnightStorm.html" style="color: white;">View Perfume
+                    Details</a></button>
+        </div>
+        <div class="product">
+            <img src="IMAGES/men3.webp" alt="Men's Perfume 3">
+            <h2>Deep Ocean</h2>
+            <p>A fresh and invigorating mix of marine accords, crisp citrus, and vetiver.</p>
+            <div class="price">AED 120.00</div>
+            <!--inline css style-->
+            <button class="btn"><a href="PERFUME PAGES/deepOcean.html" style="color: white;">View Perfume
+                    Details</a></button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Aurora's Scents. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

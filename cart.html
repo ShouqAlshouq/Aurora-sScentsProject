@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart - Aurora's Scents</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/cart.css">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Embedded CSS for specific styling-->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Footer */
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER + NAVBAR -->
+    <header class="bg-white">
+        <div class="container text-center py-3">
+            <h1 class="fw-bold"><a class="nav-link" href="index.html">Aurora's Scents</a></h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="women.html">Women's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Men's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SHOPPING CART SECTION -->
+    <div class="container mt-4">
+        <h2 class="text-center">Shopping Cart</h2>
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price (AED)</th>
+                        <th>Qty</th>
+                        <th>Total (AED)</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td>Perfume 1</td>
+                        <td class="price">د.إ 100</td>
+                        <td><input type="number" value="1" min="1" class="form-control quantity"></td>
+                        <td class="total-price">د.إ 100</td>
+                        <td><button class="btn remove-btn">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 class="text-end">Total: <span id="grand-total">د.إ 100</span></h3>
+        <button id="checkout-btn" class="btn w-100">Checkout</button>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Aurora's Scents. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="Java/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* Header & Titles */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Shopping Cart Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+.table thead {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Improved readability */
+}
+
+.table thead th {
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif; /* Readable font */
+    font-size: 15px;
+    color: #333;
+}
+
+/* Quantity Input */
+.quantity {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif; /* Readable */
+}
+
+/* Remove Button */
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif; /* Readable */
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+/* Checkout Button */
+#checkout-btn {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#checkout-btn:hover {
+    background-color: blueviolet;
+}

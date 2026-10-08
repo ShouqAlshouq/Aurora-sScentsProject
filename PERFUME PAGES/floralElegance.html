@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floral Elegance - Aurora's Scents</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../PERFUME PAGES/CSS/floralElegance.css">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="../PERFUME PAGES/JAVA/floralElegance.js"></script>
+</head>
+
+<body>
+    <!-- nav SECTION -->
+    <header class="bg-white">
+        <div class="container text-center py-3">
+            <h1 class="fw-bold"><a class="nav-link" href="../index.html">Aurora's Scents</a></h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../women.html">Women's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../mens.html">Men's Perfume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../cart.html">Shopping Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../login.html">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container product-container">
+        <div class="product">
+            <img src="../PERFUME PAGES/IMAGES/women1.jpg" alt="Floral Elegance">
+        </div>
+        <div class="product-info">
+            <h2>Floral Elegance</h2>
+            <p>A delicate blend of rose, jasmine, and vanilla that captivates the senses with its elegant and feminine charm.</p>
+            <div class="price">AED 100.00</div>
+            <p><strong>Fragrance Notes:</strong></p>
+            <ul>
+                <li>Top Notes: Bergamot, Pear, Rose</li>
+                <li>Heart Notes: Jasmine, Peony, Orange Blossom</li>
+                <li>Base Notes: Vanilla, Musk, Cedarwood</li>
+            </ul>
+            <p><strong>Longevity:</strong> Moderate (8-10 hours)</p>
+            <p><strong>Best For:</strong> Evening wear, special occasions</p>
+            <button class="btn wishlist-btn">Add to Wishlist</button>
+            <button class="buy-now btn btn-primary" data-name="Floral Elegance" data-price="100.00">Buy Now</button>
+
+    <div class="container">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+            <p><strong>Sarah M.</strong> <span>★★★★★</span></p>
+            <p>Absolutely love this perfume! The scent lasts all day and is so elegant.</p>
+        </div>
+        <div class="review">
+            <p><strong>Emma L.</strong> <span>★★★★☆</span></p>
+            <p>Beautiful floral fragrance, but I wish it lasted a bit longer.</p>
+        </div>
+
+        <h3>Leave a Review</h3>
+        <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+            <label for="comment">Review:</label>
+            <textarea id="comment" name="comment" placeholder="Enter the review"></textarea>
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </div>
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Aurora's Scents. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

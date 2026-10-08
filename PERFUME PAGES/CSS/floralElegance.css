@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+/* Links */
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Product Styling */
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.btn {
+    background: black;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #8a2be2;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Review Section */
+.review {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+/* Leave a Review Section */
+#review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+#review-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#review-form input,
+#review-form select,
+#review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#review-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#review-form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 16px;
+}
+
