@@ -399,3 +399,22 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# macOS / Windows junk
+.DS_Store
+__MACOSX/
+Thumbs.db
+desktop.ini
+ 
+# Editors
+.vscode/
+.idea/
+ 
+# Logs
+*.log
+ 
+# For later, if you add a backend (checkout currently has none)
+node_modules/
+.env
+.env.*
+ 
